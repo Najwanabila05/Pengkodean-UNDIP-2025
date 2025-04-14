@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Persediaan & Penjualan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logo Bunga -->
+    <div class="logo-container">
+        <img src="flower.png" alt="Logo Bunga">
+    </div>
+
+    <h2>Aplikasi Persediaan & Penjualan</h2>
+
+    <div class="container">
+        <h3>Tambah Barang</h3>
+        <input type="text" id="namaBarang" placeholder="Nama Barang">
+        <input type="number" id="stokBarang" placeholder="Jumlah Stok">
+        <input type="number" id="hargaBarang" placeholder="Harga per Unit">
+        <input type="color" id="warnaBarang" value="#ff5733"> Pilih Warna
+        <button onclick="tambahBarang()">Tambah</button>
+    </div>
+
+    <div class="container">
+        <h3>Daftar Stok</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Stok</th>
+                    <th>Harga (Rp)</th>
+                    <th>Warna</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="daftarStok"></tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h3>Total Pendapatan</h3>
+        <p><strong>Rp <span id="totalPendapatan">0</span></strong></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
